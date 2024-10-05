@@ -23,3 +23,37 @@ input{
 .safe {
   color: green;
 }
+.App{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  width: 50%;
+  height: auto;
+  margin-left: 100px;
+ 
+  margin-top: 50px;
+}
+
+.bounce {
+  animation: bounce 1.5s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

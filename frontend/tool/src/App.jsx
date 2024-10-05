@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-
+import logo from './assets/security.gif'
 function App() {
   const [input, setInput] = useState('');
   const [result, setResult] = useState(null);
@@ -37,7 +37,9 @@ function App() {
 
   return (
     <div className="App">
+      <div>
       <h1>Phishing Detection Tool</h1>
+      
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -57,6 +59,10 @@ function App() {
       )}
       
       {error && <p className="error">{error}</p>}
+    </div>
+    <div>
+      <img src={logo} alt="logo" className='logo bounce' />
+    </div>
     </div>
   );
 }
